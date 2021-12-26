@@ -1,0 +1,44 @@
+<div class="container" #TABLE #table>
+
+  
+ <input class="form-control mb-3 mt-3"  type="text"  [(ngModel)]="search" (keyup.enter)="searchRegional(search)" placeholder="Input here"  >
+<!-- <h1 *ngIf="listProvince.length !> 0">{{err}}</h1> -->
+ <div >
+  <h3>{{nameCountry}}</h3>
+  <button (click)="ExportTOExcel()" *ngIf="listProvince.length > 0"
+  class="btn btn-success">Export To Excel</button>
+  <table class="table">
+       <thead>
+         <tr>
+           <th scope="col">Stt</th>
+           <th scope="col">Province State</th>
+           <th scope="col">Cofirmed</th>
+           <th scope="col">Recovered</th>
+           <th scope="col">Deaths</th>
+           <th scope="col">Fatality rate</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let province of listProvince | paginate: { itemsPerPage: 10, currentPage: p };index as i">
+           <th scope="row">{{i+1}}</th>
+           <th scope="row">{{province.provincestate}}</th>
+           <td>{{province.confirmed | digitBeauty}}</td>
+           <td>{{province.recovered | digitBeauty}}</td>
+           <td>{{province.deaths | digitBeauty}}</td>
+           <td> {{province.deaths / province.confirmed * 100 | digitBeauty}}%</td>
+         </tr>
+     
+       </tbody>
+     </table>
+     <pagination-controls *ngIf="listProvince.length > 0" (pageChange)="p = $event"></pagination-controls>
+ 
+</div>
+ 
+
+
+
+
+
+</div>
+
+   

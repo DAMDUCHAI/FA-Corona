@@ -1,0 +1,11 @@
+h1{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.623);
+    font-size: 35px;
+}
+
+@media (min-width: 992px) { 
+    .size{
+        width: 300px;
+    }
+}

@@ -1,0 +1,13 @@
+
+table{
+    height: 350px;
+}
+
+input{
+    width: 40vh;
+    border-radius: 40px;
+}
+h3{
+    color: red;
+    font-weight: bold;
+}

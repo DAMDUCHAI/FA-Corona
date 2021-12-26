@@ -1,0 +1,35 @@
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.size{
+    
+    height: 90px;
+    border-radius: 10px;
+    color: #f0ecf8;
+}
+
+.size i {
+    font-size: 20px;
+}
+
+.confirmed{
+background-color: #683bb7;
+
+}
+.recovered{
+    background-color: #059689;
+   
+}
+.deaths{
+    background-color: #ea1f63;
+
+}
+.fatality-rate{
+    background-color: #c3195c;
+
+}
+.infor{
+    font-weight: bold; 
+    font-size:25px;
+}

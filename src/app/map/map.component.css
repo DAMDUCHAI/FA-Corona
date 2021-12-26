@@ -1,0 +1,10 @@
+
+.map-frame {
+  border: none;
+  height: 65vh;
+  width: auto;
+}
+
+#map {
+  height: 100%;
+}

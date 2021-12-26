@@ -1,0 +1,14 @@
+.container {
+    padding-top: 20px;
+}
+
+mat-card-subtitle {
+    font-size: 12px;
+}
+
+mat-card-header {
+    margin: 0px;
+}
+img{
+    max-height:500px;
+}

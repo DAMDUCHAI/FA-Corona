@@ -1,0 +1,48 @@
+
+<div class="row justify-content-start ms-1">
+    <h1  >World Wide</h1>
+    <div class="confirmed  size mb-4 me-3 col-sm-5">
+        <div class="d-flex pt-2 ms-3">
+            <span class="me-2"><i class="fas fa-user"></i></span>
+            <p>Confirmed</p>
+        </div>
+        <p class="infor ms-3">
+            {{wordWide.confirmed | digitBeauty}}
+
+        </p>
+    </div>
+    <div class="recovered size mb-4 me-3 col-sm-5">
+        <div class="d-flex pt-2 ms-3">
+            <span class="me-2"><i class="far fa-plus-square"></i></span>
+            <p>Recovered</p>
+        </div>
+        <p class="infor ms-3">
+            {{wordWide.recovered | digitBeauty}}
+    
+        </p>
+    </div>
+    <div class="deaths size mb-4 me-3 col-sm-5">
+        <div class="d-flex pt-2 ms-3">
+            <span class="me-2"><i class="fas fa-skull-crossbones"></i></span>
+            <p>Deaths</p>
+        </div>
+        <p class="infor ms-3">
+            {{wordWide.deaths | digitBeauty}}
+
+        </p>
+    </div>
+
+    <div class="fatality-rate size mb-4 me-3 col-sm-5">
+        <div class="d-flex pt-2 ms-3">
+            <span class="me-2"><i class="fas fa-exclamation-circle"></i></span>
+            <p>Fatality rate</p>
+        </div>
+        <p class="infor ms-3">
+            {{wordWide.deaths / wordWide.confirmed * 100 | digitBeauty}}%
+
+        </p>
+    </div>
+
+</div>
+
+
